@@ -1,4 +1,3 @@
-/* 2352475 ¼Æ¿Æ Ò×Ñô */
 #include <iostream>
 #include <iomanip>
 #include <conio.h>
@@ -9,14 +8,14 @@ using namespace std;
 
 /* ----------------------------------------------------------------------------------
 
-     ±¾ÎÄ¼ş¹¦ÄÜ£º
-	1¡¢´æ·Å±» hanoi_main.cpp ÖĞ¸ù¾İ²Ëµ¥·µ»ØÖµµ÷ÓÃµÄ¸÷²Ëµ¥Ïî¶ÔÓ¦µÄÖ´ĞĞº¯Êı
+     æœ¬æ–‡ä»¶åŠŸèƒ½ï¼š
+	1ã€å­˜æ”¾è¢« hanoi_main.cpp ä¸­æ ¹æ®èœå•è¿”å›å€¼è°ƒç”¨çš„å„èœå•é¡¹å¯¹åº”çš„æ‰§è¡Œå‡½æ•°
 
-     ±¾ÎÄ¼şÒªÇó£º
-	1¡¢²»ÔÊĞí¶¨ÒåÍâ²¿È«¾Ö±äÁ¿£¨const¼°#define²»ÔÚÏŞÖÆ·¶Î§ÄÚ£©
-	2¡¢ÔÊĞí¶¨Òå¾²Ì¬È«¾Ö±äÁ¿£¨¾ßÌåĞèÒªµÄÊıÁ¿²»Òª³¬¹ıÎÄµµÏÔÊ¾£¬È«¾Ö±äÁ¿µÄÊ¹ÓÃ×¼ÔòÊÇ£ºÉÙÓÃ¡¢É÷ÓÃ¡¢ÄÜ²»ÓÃ¾¡Á¿²»ÓÃ£©
-	3¡¢¾²Ì¬¾Ö²¿±äÁ¿µÄÊıÁ¿²»ÏŞÖÆ£¬µ«Ê¹ÓÃ×¼ÔòÒ²ÊÇ£ºÉÙÓÃ¡¢É÷ÓÃ¡¢ÄÜ²»ÓÃ¾¡Á¿²»ÓÃ
-	4¡¢°´Ğè¼ÓÈëÏµÍ³Í·ÎÄ¼ş¡¢×Ô¶¨ÒåÍ·ÎÄ¼ş¡¢ÃüÃû¿Õ¼äµÈ
+     æœ¬æ–‡ä»¶è¦æ±‚ï¼š
+	1ã€ä¸å…è®¸å®šä¹‰å¤–éƒ¨å…¨å±€å˜é‡ï¼ˆconståŠ#defineä¸åœ¨é™åˆ¶èŒƒå›´å†…ï¼‰
+	2ã€å…è®¸å®šä¹‰é™æ€å…¨å±€å˜é‡ï¼ˆå…·ä½“éœ€è¦çš„æ•°é‡ä¸è¦è¶…è¿‡æ–‡æ¡£æ˜¾ç¤ºï¼Œå…¨å±€å˜é‡çš„ä½¿ç”¨å‡†åˆ™æ˜¯ï¼šå°‘ç”¨ã€æ…ç”¨ã€èƒ½ä¸ç”¨å°½é‡ä¸ç”¨ï¼‰
+	3ã€é™æ€å±€éƒ¨å˜é‡çš„æ•°é‡ä¸é™åˆ¶ï¼Œä½†ä½¿ç”¨å‡†åˆ™ä¹Ÿæ˜¯ï¼šå°‘ç”¨ã€æ…ç”¨ã€èƒ½ä¸ç”¨å°½é‡ä¸ç”¨
+	4ã€æŒ‰éœ€åŠ å…¥ç³»ç»Ÿå¤´æ–‡ä»¶ã€è‡ªå®šä¹‰å¤´æ–‡ä»¶ã€å‘½åç©ºé—´ç­‰
 
    ----------------------------------------------------------------------------------- */
 
@@ -31,7 +30,7 @@ void input(int *n,char *src,char *dst,int *sel,int *x,int *z)
     cout << endl;
     cout << endl;
     while (1) {
-        cout << "ÇëÊäÈëººÅµËşµÄ²ãÊı(1-10)" << endl;
+        cout << "è¯·è¾“å…¥æ±‰è¯ºå¡”çš„å±‚æ•°(1-10)" << endl;
         cin >> *n;
         if (cin.fail()) {
             cin.clear();
@@ -44,7 +43,7 @@ void input(int *n,char *src,char *dst,int *sel,int *x,int *z)
         }
     }
     while (1) {
-        cout << "ÇëÊäÈëÆğÊ¼Öù(A-C)" << endl;
+        cout << "è¯·è¾“å…¥èµ·å§‹æŸ±(A-C)" << endl;
         cin >> *src;
         if (cin.fail()) {
             cin.clear();
@@ -73,7 +72,7 @@ void input(int *n,char *src,char *dst,int *sel,int *x,int *z)
         break;
     }
     while (1) {
-        cout << "ÇëÊäÈëÄ¿±êÖù(A-C)" << endl;
+        cout << "è¯·è¾“å…¥ç›®æ ‡æŸ±(A-C)" << endl;
         cin >> *dst;
         if (cin.fail()) {
             cin.clear();
@@ -104,7 +103,7 @@ void input(int *n,char *src,char *dst,int *sel,int *x,int *z)
                 break;
             }
             else if (*dst == *src) {
-                cout << "Ä¿±êÖù(" << *dst << ")²»ÄÜÓëÆğÊ¼Öù(" << *src << ")ÏàÍ¬" << endl;
+                cout << "ç›®æ ‡æŸ±(" << *dst << ")ä¸èƒ½ä¸èµ·å§‹æŸ±(" << *src << ")ç›¸åŒ" << endl;
                 cin.clear();
                 cin.ignore(2000, '\n');
                 continue;
@@ -113,7 +112,7 @@ void input(int *n,char *src,char *dst,int *sel,int *x,int *z)
     }
     if (*sel == 4 || *sel == 8) {
         while (1) {
-            cout << "ÇëÊäÈëÒÆ¶¯ËÙ¶È(0-5: 0-°´»Ø³µµ¥²½ÑİÊ¾ 1-ÑÓÊ±×î³¤ 5-ÑÓÊ±×î¶Ì)" << endl;
+            cout << "è¯·è¾“å…¥ç§»åŠ¨é€Ÿåº¦(0-5: 0-æŒ‰å›è½¦å•æ­¥æ¼”ç¤º 1-å»¶æ—¶æœ€é•¿ 5-å»¶æ—¶æœ€çŸ­)" << endl;
             cin >> delay;
             if (cin.fail()) {
                 cin.clear();
@@ -137,7 +136,7 @@ void order(char* p_src, char* p_dst)
         str[i] = 0;
     }
     cct_gotoxy(base_x, base_y + 23);
-    cout << "ÇëÊäÈëÒÆ¶¯µÄÖùºÅ£¨ÃüÁîĞÎÊ½£ºAC=A¶¥¶ËµÄÅÌ×ÓÒÆ¶¯µ½C£¬Q=ÍË³ö£©£º";
+    cout << "è¯·è¾“å…¥ç§»åŠ¨çš„æŸ±å·ï¼ˆå‘½ä»¤å½¢å¼ï¼šAC=Aé¡¶ç«¯çš„ç›˜å­ç§»åŠ¨åˆ°Cï¼ŒQ=é€€å‡ºï¼‰ï¼š";
     for (k = 0; k < 40; k++) {
         cout << " ";
     }
@@ -149,7 +148,7 @@ void order(char* p_src, char* p_dst)
         if (*p_src == 'Q' || *p_src == 'q') {
             *p_src = '0';
             cct_gotoxy(base_x, base_y + 24);
-            cout << "ÓÎÏ·ÖĞÖ¹£¡" << endl;
+            cout << "æ¸¸æˆä¸­æ­¢ï¼" << endl;
             return;
         }
         if (cin.fail()) {
@@ -197,7 +196,7 @@ void order(char* p_src, char* p_dst)
             }
             if (i > j && j != 0) {
                 cct_gotoxy(base_x, base_y + 24);
-                cout << "´óÅÌÑ¹Ğ¡ÅÌ£¬·Ç·¨ÒÆ¶¯£¡" << endl;
+                cout << "å¤§ç›˜å‹å°ç›˜ï¼Œéæ³•ç§»åŠ¨ï¼" << endl;
                 Sleep(1000);
                 cct_gotoxy(base_x, base_y + 24);
                 for (k = 0; k < 40; k++) {
@@ -212,7 +211,7 @@ void order(char* p_src, char* p_dst)
             }
             else if (i == 0) {
                 cct_gotoxy(base_x, base_y + 24);
-                cout << "Ô´ÖùÎª¿Õ£¡" << endl;
+                cout << "æºæŸ±ä¸ºç©ºï¼" << endl;
                 Sleep(1000);
                 cct_gotoxy(base_x, base_y + 24);
                 for (k = 0; k < 40; k++) {
@@ -245,10 +244,10 @@ void order(char* p_src, char* p_dst)
 void tip(char src, char dst,int n,int sel)
 {
     if (sel == 4 || sel == 8) {
-        cout << "´Ó " << src << " ÒÆ¶¯µ½ " << dst << "£¬¹²" << n << "²ã£¬ÑÓÊ±ÉèÖÃÎª " << delay << endl;
+        cout << "ä» " << src << " ç§»åŠ¨åˆ° " << dst << "ï¼Œå…±" << n << "å±‚ï¼Œå»¶æ—¶è®¾ç½®ä¸º " << delay << endl;
     }
     else if (sel == 6 || sel == 7|| sel == 9) {
-        cout << "´Ó " << src << " ÒÆ¶¯µ½ " << dst << "£¬¹²" << n << "²ã" << endl;
+        cout << "ä» " << src << " ç§»åŠ¨åˆ° " << dst << "ï¼Œå…±" << n << "å±‚" << endl;
     }
 }
 
@@ -289,7 +288,7 @@ void plate(int sel)
     if (sel == 4||sel==8||sel==9) {
         if (num == 1) {
             cct_gotoxy(base_x, base_y + 6 + 3 * (sel - 4));
-            cout << setiosflags(ios::left) << setw(20) << "³õÊ¼:";
+            cout << setiosflags(ios::left) << setw(20) << "åˆå§‹:";
             cout << resetiosflags(ios::left);
         }
         else {
@@ -555,16 +554,16 @@ void step(int sel, int n, char src, char tmp, char dst)
         cout << setw(2) << n << "# " << src << "-->" << dst << endl;
     }
     else if (sel == 2) {
-        cout << "µÚ" << setw(4) << num << "²½(" << n << "#: " << src << "-->" << dst << ") "<<endl;
+        cout << "ç¬¬" << setw(4) << num << "æ­¥(" << n << "#: " << src << "-->" << dst << ") "<<endl;
         num++;
     }
     else if (sel == 3) {
-        cout << "µÚ" << setw(4) << num << "²½(" << n << "#: " << src << "-->" << dst << ") ";
+        cout << "ç¬¬" << setw(4) << num << "æ­¥(" << n << "#: " << src << "-->" << dst << ") ";
         box((int)(src - 'A'), (int)(dst - 'A'), n);
         plate(sel);
     }
     else if (sel == 4) {
-        cout << "µÚ" << setw(4) << num << "²½(" << n << "#: " << src << "-->" << dst << ") ";
+        cout << "ç¬¬" << setw(4) << num << "æ­¥(" << n << "#: " << src << "-->" << dst << ") ";
         box((int)(src - 'A'), (int)(dst - 'A'), n);
         plate(sel);
         plate2(sel);
@@ -572,7 +571,7 @@ void step(int sel, int n, char src, char tmp, char dst)
     }
     else {
         cct_gotoxy(base_x, base_y + 6 + 3 * (sel - 4));
-        cout << "µÚ" << setw(4) << num << "²½(" << n << "#: " << src << "-->" << dst << ") ";
+        cout << "ç¬¬" << setw(4) << num << "æ­¥(" << n << "#: " << src << "-->" << dst << ") ";
         box((int)(src - 'A'), (int)(dst - 'A'), n);
         plate(sel);
         plate2(sel);
@@ -614,7 +613,7 @@ void game(int n,char p_src,char p_dst,int sel)
             N = c[top3 - 1];
         }
         cct_gotoxy(base_x, base_y + 6 + 3 * (sel - 4 ));
-        cout << "µÚ" << setw(4) << num << "²½(" << n << "#: " << p_src << "-->" << p_dst << ") ";
+        cout << "ç¬¬" << setw(4) << num << "æ­¥(" << n << "#: " << p_src << "-->" << p_dst << ") ";
         box((int)(p_src - 'A'), (int)(p_dst - 'A'), n);
         plate(sel);
         plate2(sel);
@@ -645,7 +644,7 @@ void game(int n,char p_src,char p_dst,int sel)
         }
         if (line==0) {
             cct_gotoxy(base_x, base_y + 24);
-            cout << "ÓÎÏ·½áÊø£¡" << endl;
+            cout << "æ¸¸æˆç»“æŸï¼" << endl;
             break;
         }
         else {
@@ -659,7 +658,7 @@ void to_be_continued()
     int i;
     cct_setcolor();
     cct_gotoxy(0, base_y + 25);
-    cout << "°´»Ø³µ¼ü¼ÌĞø...";
+    cout << "æŒ‰å›è½¦é”®ç»§ç»­...";
     while (_getch() != '\r')
         ;
 
