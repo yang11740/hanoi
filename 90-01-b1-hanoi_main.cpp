@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include "../include/cmd_console_tools.h"
+#include "cmd_console_tools.h"
 #include "90-01-b1-hanoi.h"
 using namespace std;
 /* ----------------------------------------------------------------------------------
